@@ -25,23 +25,25 @@
           </ul>
         </nav>
         <div class="user_block">
-          <div class="index_search">
+          <div class="search">
+            <div class="search_loupe"><img src="http://placehold.it/19x19" width="19" height="19" alt="Поиск">
+            </div>
             <form class="search_form" action="#" method="get">
               <input type="text" name="search" placeholder="Что ищем?" required="">
             </form>
-          </div>
+           </div>
           <a class="login" href="#">Вход</a>
           <div class="cart">
             <a class="cart_link" href="#">Пусто</a>
+          </div>
+          <div class="worktime">
+            <p>С 10 до 20,ежедневно</p>
+            <span class="phone_number">8 812 450-25-25</span>
           </div>
         </div>
       </div>
     </header>
     <main class="container">
-      <div class="worktime">
-        <p>С 10 до 20,ежедневно</p>
-        <span class="phone_number">8 812 450-25-25</span>
-      </div>
       <div class="slider">
         <input type="radio" id="button1" name="toggle" checked>
         <input type="radio" id="button2" name="toggle">
@@ -49,7 +51,7 @@
         <div class="slider_controls">
           <label for="button1"></label>
           <label for="button2"></label>
-        <label for="button3"></label>
+          <label for="button3"></label>
         </div>
         <div class="slider_inner">
           <div class="slider_slides">
@@ -59,7 +61,7 @@
             </div>
             <div class="slide">
               <div class="slider_title">Шоколадный пломбир и лимонный сорбет</div>
-             <a class="slider_button" href="#">Давайте оба!</a>
+              <a class="slider_button" href="#">Давайте оба!</a>
             </div>
             <div class="slide">
               <div class="slider_title">Пломбир с помадкой и клубничный щербет</div>
@@ -72,59 +74,51 @@
         <div class="offers_left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <div class="offers_button"><a href="#">Хочу варенье!</a></div>
+          <a class="offers_button" href="#">Хочу варенье!</a>
         </div>
         <div class="offers_right">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <div class="offers_button"><a href="#">Хочу шоколадки!</a></div>
+          <a class="offers_button" href="#">Хочу шоколадки!</a>
         </div>
       </div>
-      <div class="top_offers">
-        <div class="hit_item">
+      <div class="offers_hits">
+        <div class="product_item hit">
           <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <span class="hit_price">310 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <span class="hit_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+          <span class="product_price">310 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
+          <p class="product_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </div>
-        <div class="hit_item">
+        <div class="product_item hit">
           <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <span class="hit_price">380 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <span class="hit_description">Сливочно-кофейное с кусочками шоколада</span>
+          <span class="product_price">380 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
+          <p class="product_description">Сливочно-кофейное с кусочками шоколада</p>
         </div>
-        <div class="hit_item">
+        <div class="product_item hit">
           <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <span class="hit_price">355 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <span class="hit_description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+          <span class="product_price">355 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
+          <p class="product_description">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </div>
-        <div class="hit_item">
+        <div class="product_item hit">
           <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <span class="hit_price">415 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <span class="hit_description">Сливочное крем-брюле с карамельной подливкой</span>
+          <span class="product_price">415 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
+          <p class="product_description">Сливочное крем-брюле с карамельной подливкой</p>
         </div>
       </div>
       <div class="about_gllacy">
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-        <div class="about_gllacy_feature">
-          <p class="gllacy_feature">Все наше мороженое изготавливается на собственном производстве,с использованием
-            современного оборудования и проверенных временем технологий.</p>
-        </div>
-        <div class="about_gllacy_feature">
-          <p class="gllacy_feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-            с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="about_gllacy_feature">
-          <p class="gllacy_feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-            качества.Все дополнительные ингредиенты произведены из натурального,экологически чистого сырья.</p>
-        </div>
-        <div class="about_gllacy_feature">
-          <p class="gllacy_feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не
-            дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-        </div>
+        <p class="gllacy_feature">Все наше мороженое изготавливается на собственном производстве,с использованием
+          современного оборудования и проверенных временем технологий.</p>
+        <p class="gllacy_feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+          с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="gllacy_feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+          качества.Все дополнительные ингредиенты произведены из натурального,экологически чистого сырья.</p>
+        <p class="gllacy_feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не
+          дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
       </div>
       <div class="index_content">
         <div class="index_blog">
-          <span class="new_blog">Новое в нашем блоге</span>
-          <a class="content_blog" href="#">10 способов сервировки<br> фруктовых щербетов</a>
+          <p class="new_blog">Новое в нашем блоге</p>
+          <a class="content_blog" href="#">10 способов сервировки фруктовых щербетов</a>
         </div>
         <div class="index_subscribe">
           <p class="spam_offer">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
@@ -146,14 +140,6 @@
           <p>(с 10 до 20 ежедневно)</p>
           <a class="contacts_button" href="#">Форма обратной связи</a>
         </div>
-        <form action="#" method="post">
-          <button class="feedback_button_close" type="button" title="Закрыть"></button>
-          <div class="feedback_title">Мы обязательно вам ответим!</div>
-          <input type="text" name="username" placeholder="Как вас зовут?">
-          <input type="email" name="email" placeholder="Ваша почта для ответа?">
-          <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
-          <input type="submit" value="Отправить" name="send_form">
-        </form>
       </div>
     </main>
     <footer class="main_footer">
@@ -164,20 +150,31 @@
           <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
           <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
         </section>
-        <section class="about_production">
-          <a class="sign" href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
-        </section>
-        <section class="documents">
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+        <section class="gllacy_production">
+          <div class="about_production">
+            <a class="sign" href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="documents">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
         </section>
         <section class="footer_copyright">
           <img src="http://placehold.it/110x40" width="110" height="40" alt="HTML Academy">
           <p class="developer_copyright">
-            <a href="https://htmlacademy.ru">HTML Academy</a></p>
+            Сделавно в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
+          </p>
         </section>
       </div>
     </footer>
+    <form action="#" method="post">
+      <button class="feedback_button_close" type="button" title="Закрыть"></button>
+      <div class="feedback_title">Мы обязательно вам ответим!</div>
+      <input type="text" name="username" placeholder="Как вас зовут?">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
+      <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
+      <input type="submit" value="Отправить" name="send_form">
+    </form>
   </body>
 </html>
