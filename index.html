@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo"><img src="img/logo_gllacy.png" width="154" height="65" alt="Gllacy Shop"></div>
         <nav class="main_navigation">
           <ul class="navigation">
             <li class="navigation_item">
-              <a class="catalog-item" href="#">Каталог</a>
+              <a class="catalog_item" href="#">Каталог</a>
               <ul class="navigation_dropdown">
                 <li><a class="main_dropdown" href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
@@ -37,7 +37,7 @@
             <a class="cart_link" href="#">Пусто</a>
           </div>
           <div class="worktime">
-            <p>С 10 до 20,ежедневно</p>
+            <p>С 10 до 20, ежедневно</p>
             <span class="phone_number">8 812 450-25-25</span>
           </div>
         </div>
@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="offers">
+      <div class="offers clearfix">
         <div class="offers_left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -82,40 +82,52 @@
           <a class="offers_button" href="#">Хочу шоколадки!</a>
         </div>
       </div>
-      <div class="offers_hits">
+      <div class="offers_hits clearfix">
         <div class="product_item hit">
-          <img src="img/item_orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <span class="product_price">310 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <p class="product_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <div class="product_item_price">
+            <img src="img/item_orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <span class="product_price">310 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей"><span class="measurement">/кг</span></span>
+            <p class="product_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          </div>
         </div>
         <div class="product_item hit">
-          <img src="img/item_coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <span class="product_price">380 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <p class="product_description">Сливочно-кофейное с кусочками шоколада</p>
+          <div class="product_item_price">
+            <img src="img/item_coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <span class="product_price">380 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей"><span class="measurement">/кг</span></span>
+            <p class="product_description">Сливочно-кофейное с кусочками шоколада</p>
+          </div>
         </div>
         <div class="product_item hit">
-          <img src="img/item_strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <span class="product_price">355 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <p class="product_description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <div class="product_item_price">
+            <img src="img/item_strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <span class="product_price">355 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей"><span class="measurement">/кг</span></span>
+            <p class="product_description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          </div>
         </div>
         <div class="product_item hit">
-          <img src="img/item_caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <span class="product_price">415 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей">/кг</span>
-          <p class="product_description">Сливочное крем-брюле с карамельной подливкой</p>
+          <div class="product_item_price">
+            <img src="img/item_caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <span class="product_price">415 <img src="http://placehold.it/267x267" width="28" height="32" alt="рублей"><span class="measurement">/кг</span></span>
+            <p class="product_description">Сливочное крем-брюле с карамельной подливкой</p>
+          </div>
         </div>
       </div>
-      <div class="about_gllacy">
+      <div class="about_gllacy clearfix">
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+        <div class="features_left">
         <p class="gllacy_feature">Все наше мороженое изготавливается на собственном производстве,с использованием
           современного оборудования и проверенных временем технологий.</p>
         <p class="gllacy_feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
           с которыми нас связывает долговременное сотрудничество.</p>
+        </div>
+        <div class="features_right">
         <p class="gllacy_feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
           качества.Все дополнительные ингредиенты произведены из натурального,экологически чистого сырья.</p>
         <p class="gllacy_feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не
           дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+        </div>
       </div>
-      <div class="index_content">
+      <div class="index_content clearfix">
         <div class="index_blog">
           <p class="new_blog">Новое в нашем блоге</p>
           <a class="content_blog" href="#">10 способов сервировки фруктовых щербетов</a>
@@ -129,8 +141,9 @@
           </form>
         </div>
       </div>
-      <div class="container">
-        <div class="map"><img src="img/bg_map.jpg" width="1200" height="429" alt="Как нас найти">
+      <div class="container map_container">
+        <div class="map">
+          <img src="img/bg_map.jpg" width="1200" height="429" alt="Как нас найти">
         </div>
         <div class="contacts">
           <p>Адрес главного офиса и<br> офлайн магазина:</p>
@@ -142,13 +155,19 @@
         </div>
       </div>
     </main>
-    <footer class="main_footer">
+    <footer class="main_footer clearfix">
       <div class="container">
         <section class="footer_social">
           <a class="social_btn social_btn_tw" href="#">Твиттер</a>
           <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
           <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
           <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer_copyright">
+          <img src="img/logo_developer.png" width="108" height="38" alt="HTML Academy">
+          <p class="developer_copyright">
+            Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
+          </p>
         </section>
         <section class="gllacy_production">
           <div class="about_production">
@@ -160,21 +179,17 @@
             <a href="#">Экологические стандарты</a>
           </div>
         </section>
-        <section class="footer_copyright">
-          <img src="img/logo_developer.png" width="108" height="38" alt="HTML Academy">
-          <p class="developer_copyright">
-            Сделавно в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
-          </p>
-        </section>
       </div>
     </footer>
-    <form action="#" method="post">
-      <button class="feedback_button_close" type="button" title="Закрыть"></button>
-      <div class="feedback_title">Мы обязательно вам ответим!</div>
-      <input type="text" name="username" placeholder="Как вас зовут?">
-      <input type="email" name="email" placeholder="Ваша почта для ответа?">
-      <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
-      <input type="submit" value="Отправить" name="send_form">
-    </form>
+    <div class="feedback_form">
+      <form action="#" method="post">
+        <button class="feedback_button_close" type="button" title="Закрыть"></button>
+        <div class="feedback_title">Мы обязательно вам ответим!</div>
+        <input type="text" name="username" placeholder="Как вас зовут?">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
+        <input type="submit" value="Отправить" name="send_form">
+      </form>
+   </div>
   </body>
 </html>

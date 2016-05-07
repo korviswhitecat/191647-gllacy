@@ -11,3 +11,314 @@ h2  {
   font-size: 35px;
   line-height: 41px;
 }
+
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+  /* Только для оформления сетки */
+  background-color: gray;
+}
+
+.logo {
+  float: left;
+  width: 154px;
+  margin-left: -5px;
+  margin-top: 9px;
+  margin-right: 30px;
+}
+
+.main_navigation {
+  float: left;
+  width: 600px;
+}
+
+.main_navigation ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-right: 27px;
+}
+
+.user_block {
+  float: right;
+  width: 267px;
+  font-size: 14px;
+  text-align: right;
+  position: relative;
+}
+
+.login,
+.search,
+.cart {
+  display: inline-block;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.worktime {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  z-index: 10;
+}
+
+.worktime p {
+  margin: 0;
+}
+
+.phone_number {
+  font-size: 22px;
+}
+
+.slider {
+  margin: 0;
+    /* Только для оформления сетки */
+  min-height: 573px;
+}
+
+.offers {
+margin: 0;
+padding: 0;
+margin-bottom: 40px;
+}
+
+.offers_left {
+  float: left;
+  width: 520px;
+  min-height: 230px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Только для оформления сетки */
+  background-color: red;
+}
+
+.offers_right {
+  float: right;
+  width: 520px;
+  min-height: 230px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Только для оформления сетки */
+  background-color: red;
+}
+
+.offers_left h2,
+.offers_right h2 {
+  text-align: left;
+  margin: 0;
+  margin-top: 12px;
+
+}
+
+.product_item {
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+  margin-bottom: 10px;
+  min-height: 343px;
+  /* Только для оформления сетки */
+  background-color: green;
+
+}
+
+.product_item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product_item p {
+  padding: 0;
+  margin: 0;
+}
+
+.product_item_price {
+  position: relative;
+}
+
+.product_price {
+  position: absolute;
+  left: 0;
+  top: 215px;
+  font-size: 45px;
+}
+
+.measurement {
+  font-size: 30px;
+}
+
+.product_description {
+  font-size: 16px;
+  text-align: center;
+}
+
+.about_gllacy {
+  margin-bottom: 40px;
+  margin-top: 7px;
+  min-height: 308px;
+  /* Только для оформления сетки */
+  background-color: green;
+}
+
+.about_gllacy h3 {
+  margin: 0;
+  padding-left: 22px;
+  padding-top: 27px;
+}
+
+.features_left {
+  float: left;
+  width: 485px;
+  padding-left: 77px;
+}
+
+.features_right {
+  float: right;
+  width: 485px;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.gllacy_feature {
+  font-size: 16px;
+  font-weight: normal;
+  width: 485px;
+}
+
+.index_content {
+  margin-bottom: 40px;
+  /* Только для оформления сетки */
+  min-height: 220px;
+  background-color: red;
+}
+
+.index_blog {
+  float: left;
+  width: 540px;
+  padding-left: 20px;
+}
+
+.index_subscribe {
+  float: right;
+  width: 540px;
+}
+
+.map_container {
+  position: relative;
+
+}
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+.contacts {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 303px;
+  min-height: 303px;
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 30px;
+  padding-left: 25px;
+  /* Только для оформления сетки */
+  background-color: red;
+}
+
+.contacts p {
+  padding: 0;
+  marging: 0;
+}
+
+.main_footer {
+  font-size: 14px;
+  font-weight: normal;
+  /* Только для оформления сетки */
+  background-color: red;
+}
+
+.footer_social {
+  float: left;
+  width: 220px;
+  padding-top: 35px;
+  padding-left: 27px;
+  font-size: 12px;
+}
+
+.gllacy_production {
+  width: 330px;
+  margin: auto;
+  padding-top: 35px;
+  font-size: 13px;
+}
+
+.footer_copyright {
+  float: right;
+  width: 220px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+/*catalog*/
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.catalog {
+  margin-top: 40px;
+}
+
+.pagination {
+  text-align: right;
+  margin-top: 50px;
+}
+
+fieldset {
+  display: inline-block;
+}
+.button_filters {
+  display: inline-block;
+}
+
+/*menu and windows*/
+
+
+.feedback_form,
+.search_form {
+  display: none;
+}
+
+.navigation_dropdown li {
+  display: none;
+}
