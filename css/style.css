@@ -1018,6 +1018,13 @@ margin-bottom: 35px;
 
 /*map*/
 
+.google_map {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+
 .map_container {
   position: relative;
   width: 1200px;
@@ -1032,7 +1039,7 @@ margin-bottom: 35px;
 .contacts {
   position: absolute;
   top: 60px;
-  right: 25px;
+  right: -74px;
   width: 275px;
   min-height: 280px;
   font-size: 14px;
@@ -1045,6 +1052,7 @@ margin-bottom: 35px;
   line-height: 20px;
   color: #323232;
   background-color: #fefefe;
+  z-index: 15;
 }
 
 .contacts p {
