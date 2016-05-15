@@ -18,18 +18,18 @@
         <div class="logo"><img src="img/logo_gllacy.png" width="154" height="65" alt="Gllacy Shop"></div>
         <nav class="main_navigation">
           <ul class="navigation">
-            <li class="navigation_item">
-              <a class="catalog_item" href="#">Каталог</a>
+            <li class="dropdown">
+              <a class="navigation_item" href="#">Каталог</a>
               <ul class="navigation_dropdown">
                 <li><a class="main_dropdown" href="#">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="navigation_item"><a href="#">Доставка и оплата</a></li>
-            <li class="navigation_item"><a href="#">О Компании</a></li>
+            <li><a class="navigation_item" href="#">Доставка и оплата</a></li>
+            <li><a class="navigation_item" href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="user_block">
@@ -38,8 +38,21 @@
             <form class="search_form" action="#" method="get">
               <input type="text" name="search" placeholder="Что ищем?" required="">
             </form>
+          </div>
+           <div class="login">
+             <a class="login_link" href="#">Вход</a>
+              <div class="popup_login">
+                <form action="#" method="post">
+                 <input type="email" name="email" placeholder="Электронная почта" required>
+                 <input type="password" name="password" placeholder="Пароль" required>
+                 <button class="login_button_send" type="submit">Войти</button>
+                 <div class="login_form">
+                   <a href="#">Забыли пароль?</a>
+                   <a href="#">Новая регистрация</a>
+                 </div>
+               </form>
+             </div>
            </div>
-          <a class="login" href="#">Вход</a>
           <div class="cart">
             <a class="cart_link" href="#">Пусто</a>
           </div>
@@ -93,6 +106,9 @@
             <span class="product_price">310 <span class="rub_price">р.</span><span class="measurement">/кг</span></span>
           </div>
           <span class="product_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+          <div class="quick_view_button">
+						<a class="view_button" href="#">Быстрый просмотр</a>
+					</div>
         </div>
         <div class="product_item hit">
           <img src="img/item_coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -100,6 +116,9 @@
             <span class="product_price">380 <span class="rub_price">р.</span><span class="measurement">/кг</span></span>
           </div>
           <span class="product_description">Сливочно-кофейное с кусочками шоколада</span>
+          <div class="quick_view_button">
+						<a class="view_button" href="#">Быстрый просмотр</a>
+					</div>
         </div>
         <div class="product_item hit">
           <img src="img/item_strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -107,6 +126,9 @@
             <span class="product_price">355 <span class="rub_price">р.</span><span class="measurement">/кг</span></span>
           </div>
           <span class="product_description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+          <div class="quick_view_button">
+						<a class="view_button" href="#">Быстрый просмотр</a>
+					</div>
         </div>
         <div class="product_item hit">
           <img src="img/item_caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -114,20 +136,23 @@
             <span class="product_price">415 <span class="rub_price">р.</span><span class="measurement">/кг</span></span>
           </div>
           <span class="product_description">Сливочное крем-брюле с карамельной подливкой</span>
+          <div class="quick_view_button">
+						<a class="view_button" href="#">Быстрый просмотр</a>
+					</div>
         </div>
       </div>
       <div class="about_gllacy clearfix">
         <h3>Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес</h3>
         <div class="features_left">
-        <p class="gllacy_feature"><span class="gllacy_feature_sign feature1"></span>Все наше мороженое изготавливается на собственном производстве,с использованием
+        <p class="gllacy_feature"><span class="gllacy_feature_sign feature1">Купи мороженку!</span>Все наше мороженое изготавливается на собственном производстве,с использованием
           современного оборудования и проверенных временем технологий.</p>
-        <p class="gllacy_feature"><span class="gllacy_feature_sign feature2"></span>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+        <p class="gllacy_feature"><span class="gllacy_feature_sign feature2">Купи мороженку!</span>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
           качества.Все дополнительные ингредиенты произведены из натурального,экологически чистого сырья.</p>
         </div>
         <div class="features_right">
-          <p class="gllacy_feature"><span class="gllacy_feature_sign feature3"></span>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+          <p class="gllacy_feature"><span class="gllacy_feature_sign feature3">Купи мороженку!</span>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
             с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="gllacy_feature"><span class="gllacy_feature_sign feature4"></span>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не
+          <p class="gllacy_feature"><span class="gllacy_feature_sign feature4">Купи мороженку!</span>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не
           дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
         </div>
       </div>
@@ -175,7 +200,7 @@
             Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
           </p>
         </section>
-        <section class="gllacy_production">
+        <section class="gllacy_production clearfix">
           <div class="about_production">
             <span class="about_production_sign"></span>
             <a class="sign" href="#">Для поставщиков</a>
@@ -188,16 +213,17 @@
         </section>
       </div>
     </footer>
-    <div class="feedback_form">
+    <div class="popup_feedback_form">
       <form action="#" method="post">
         <button class="feedback_button_close" type="button" title="Закрыть"></button>
         <div class="feedback_title">Мы обязательно вам ответим!</div>
         <input type="text" name="username" placeholder="Как вас зовут?">
         <input type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea name="comment" placeholder="Напишите что-нибудь..."></textarea>
-        <input type="submit" value="Отправить" name="send_form">
+        <button class="feedback_button_send" type="submit">Отправить</button>
       </form>
    </div>
+   <div class="overlay"></div>
   </div>
   </div>
   </body>
