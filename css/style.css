@@ -386,6 +386,7 @@ box-shadow: none;
   text-align: right;
   position: relative;
   padding-top: 25px;
+  margin-right: -5px;
 }
 
 .login,
@@ -465,8 +466,8 @@ box-shadow: none;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 45px;
-  padding-right: 34px;
-  margin-right: 3px;
+  padding-right: 14px;
+  margin-right: 1px;
   color: #000000;
   text-decoration: none;
   font-weight: normal;
@@ -663,7 +664,7 @@ margin-bottom: 35px;
   text-align: center;
   width: 267px;
   margin-right: 21px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 5px;
   font-size: 0;
 }
@@ -683,7 +684,7 @@ margin-bottom: 35px;
 
 .product_item_price {
   position: absolute;
-  top: 218px;
+  top: 220px;
 }
 
 .product_price {
@@ -698,15 +699,15 @@ margin-bottom: 35px;
   width: 30px;
   height: 38px;
   position: absolute;
-  top: -8px;
+  top: -7px;
   left: 82px;
   background-image: url("../img/sprite.png");
-  background-position: -4px -166px;
+  background-position: -5px -168px;
 }
 
 .rub_price {
   font-size: 0;
-  width: 30px;
+  width: 24px;
   height: 38px;
   display: inline-block;
   vertical-align: bottom;
@@ -820,7 +821,7 @@ margin-bottom: 35px;
 
 .about_gllacy {
   margin-bottom: 40px;
-  margin-top: 10px;
+  margin-top: 0;
   min-height: 308px;
   border-radius: 20px;
   background: url("../img/bg_seo.jpg") repeat;
@@ -1325,7 +1326,7 @@ h1 {
 
 .pagination {
   text-align: right;
-  margin-top: 75px;
+  margin-top: 43px;
   padding-bottom: 28px;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1346,7 +1347,6 @@ h1 {
   padding-right: 9px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-left: 2px;
   display: inline-block;
   vertical-align: top;
 }
@@ -1362,6 +1362,8 @@ h1 {
   background-color: rgba(255, 255, 255, 1);
   color: #000000;
   border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .pagination a:last-child,
@@ -1370,6 +1372,7 @@ h1 {
   height: 27px;
   padding: 0;
   width: 27px;
+  margin-right: -12px;
 }
 
 .pagination_prev {
@@ -1403,14 +1406,21 @@ fieldset {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-top: 38px;
   padding-left: 16px;
-  padding-right: 19px;
+  padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   position: relative;
+}
+
+.filters1 fieldset {
+  margin-top: 45px;
+}
+
+.filters2 fieldset {
+  margin-top: 35px;
 }
 
 legend {
@@ -1498,13 +1508,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .fatness_options label {
-  padding-left: 31px;
-  padding-right: 11px;
+  padding-left: 36px;
+  padding-right: 8px;
 }
 
 .topping_options label {
-  padding-left: 31px;
-  padding-right: 16px;
+  padding-left: 40px;
+  padding-right: 9px;
 }
 
 .price_options {
@@ -1515,7 +1525,7 @@ input[type="checkbox"]:checked + label::before {
   font-weight: normal;
   color: #ffffff;
   width: 215px;
-  padding-top: 17px;
+  padding-top: 29px;
   margin-left: 13px;
   margin-right: 13px;
 }
@@ -1532,7 +1542,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .price_controls {
-  margin-bottom: 7px;
+  margin-bottom: 1px;
   margin-left: 15px;
 }
 
@@ -1581,11 +1591,11 @@ input[type="checkbox"]:checked + label::before {
 
 .button_filters_form {
   display: inline-block;
-  margin-top: 40px;
-  margin-left: 7px;
+  margin-top: 35px;
+  margin-left: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-right: 30px;
+  padding-right: 28px;
   padding-left: 30px;
   font-weight: normal;
   font-size: 16px;
