@@ -351,11 +351,18 @@ body > input[type="radio"] {
   display: block;
 }
 
+.dropdown:hover .navigation_item {
+  background: #f8f7f4;
+  color: #333333;
+  border-radius: 100px;
+  border: none;
+}
 
-/*вот этот динозавр должен оставлять цвет ссылки каталога белым при наведении
-на выпдающее меню, но он не оставляет. возможно, динозавр не той породы*/
-.navigation_dropdown a:hover .navigation li:first-child a {
-  background-color: #f8f7f4;
+.dropdown:hover .current_inner_page {
+  background: #f8f7f4;
+  color: #333333;
+  border-radius: 100px;
+  border: none;
 }
 
 .navigation_dropdown a:hover {
@@ -366,7 +373,6 @@ body > input[type="radio"] {
 .navigation_dropdown a:active {
 background-color: #f6b5a5;
 box-shadow: none;
-
 }
 
 .logo a:hover {
@@ -571,9 +577,10 @@ margin-bottom: 35px;
 .offers_left {
   float: left;
   width: 520px;
-  min-height: 230px;
+  min-height: 210px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
   border-radius: 20px;
   background-image: url("../img/bg_offer1.jpg");
 }
@@ -581,10 +588,11 @@ margin-bottom: 35px;
 .offers_right {
   float: right;
   width: 520px;
-  min-height: 230px;
+  min-height: 210px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
+  padding-bottom: 20px;
   background-image: url("../img/bg_offer2.jpg");
 }
 
@@ -657,7 +665,6 @@ margin-bottom: 35px;
   margin-right: 21px;
   margin-bottom: 10px;
   margin-top: 5px;
-  min-height: 338px;
   font-size: 0;
 }
 
@@ -737,8 +744,7 @@ margin-bottom: 35px;
   left: -7px;
   top: -5px;
   width: 280px;
-  height: calc(100% + 60px);
-  bottom: -10px;
+  bottom: -70px;
   position: absolute;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -747,11 +753,12 @@ margin-bottom: 35px;
   cursor: pointer;
 }
 
-
-/*а тут загадочность - при наведении отображается кнопка, но псевдоэлемент
-не желает показываться*/
-.product_item:hover .product_item::before {
+.product_item:hover::before {
   display: block;
+}
+
+.product_item:hover {
+  z-index: 20;
 }
 
 .product_item:hover .quick_view_button {
@@ -760,7 +767,7 @@ margin-bottom: 35px;
 
 .quick_view_button {
   position: absolute;
-  bottom: -40px;
+  bottom: -60px;
   padding-left: 30px;
   z-index: 10;
   display: none;
@@ -919,6 +926,13 @@ margin-bottom: 35px;
   line-height: 30px;
 }
 
+.index_blog a:hover,
+.index_blog a:active {
+  color: #ffbc9e;
+  text-decoration: none;
+}
+
+
 .index_subscribe {
   position: relative;
   float: right;
@@ -973,7 +987,7 @@ margin-bottom: 35px;
   cursor: pointer;
 }
 
-.offers_button:hover {
+.spam_button:hover {
   backrgound: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -982,7 +996,7 @@ margin-bottom: 35px;
   border: none;
 }
 
-.offers_button:active {
+.spam_button:active {
   backrgound: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
@@ -1018,17 +1032,21 @@ margin-bottom: 35px;
 
 /*map*/
 
+.map_wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map {
+  position: relative;
+}
+
 .google_map {
   position: absolute;
   width: 100%;
+  top: 0;
   z-index: 10;
-}
-
-
-.map_container {
-  position: relative;
-  width: 1200px;
-  margin-left: -27px;
 }
 
 .map img {
@@ -1039,7 +1057,7 @@ margin-bottom: 35px;
 .contacts {
   position: absolute;
   top: 60px;
-  right: -74px;
+  right: 0;
   width: 275px;
   min-height: 280px;
   font-size: 14px;
@@ -1586,8 +1604,8 @@ input[type="checkbox"]:checked + label::before {
   border: none;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-right: 46px;
-  padding-left: 47px;
+  padding-right: 32px;
+  padding-left: 32px;
   outline: none;
 }
 
@@ -1596,8 +1614,8 @@ input[type="checkbox"]:checked + label::before {
   border: none;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-right: 46px;
-  padding-left: 47px;
+  padding-right: 32px;
+  padding-left: 32px;
   box-shadow: inset 0 2px 1px rgba(105, 105, 105, 1);
   outline: none;
 }
@@ -1607,15 +1625,12 @@ input[type="checkbox"]:checked + label::before {
   width: 200px;
 }
 
-/*больше нравится вариант с fixed, но при отступе сверху как по макету на 17"
-экране кнопка "отправить" оказывается за нижней границей*/
-
 .popup_feedback_form {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -222px;
   margin-left: -239px;
+  margin-top: -222px;
   width: 478px;
   padding-left: 24px;
   padding-right: 27px;
@@ -1860,6 +1875,30 @@ input[type="checkbox"]:checked + label::before {
 .search,
 .cart {
   padding-bottom: 20px;
+}
+
+.popup:hover .login_link {
+  background: #f8f7f4;
+  color: #333333;
+  border-radius: 100px;
+  border: none;
+}
+
+.popup:hover .login_link::before {
+  background-image: url("../img/sprite.png");
+  background-position: -5px -105px;
+}
+
+.popup:hover .search_loupe {
+  background: #f8f7f4;
+  color: #333333;
+  border-radius: 50%;
+  border: none;
+}
+
+.popup:hover .search_loupe::before {
+  background-image: url("../img/sprite.png");
+  background-position: -54px -133px;
 }
 
 .search_form {
