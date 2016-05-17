@@ -735,8 +735,8 @@ margin-bottom: 35px;
   height: 61px;
   top: 0;
   left: 0;
-  background-image: url("../img/icon_hit.png");
-  background-repeat: no-repeat;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -10px -250px;
   z-index: 10;
 }
 
@@ -1311,7 +1311,8 @@ margin-bottom: 35px;
   height: 12px;
   top: 4px;
   right: -20px;
-  background: url("../img/icon_breadcrumbs.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -34px -1127px;
   cursor: none;
   pointer-events: none;
 }
@@ -1376,7 +1377,8 @@ h1 {
 }
 
 .pagination_prev {
-  background: url("../img/pagination_prev.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -29px -1082px;
   cursor: none;
   pointer-events: none;
   opacity: 0.2;
@@ -1385,7 +1387,8 @@ h1 {
 }
 
 .pagination_next {
-  background: url("../img/pagination_next.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -29px -1039px;
   cursor: pointer;
   opacity: 1;
   display: inline-block;
@@ -1488,7 +1491,8 @@ input[type="checkbox"]:checked + label::before {
 	left: 0;
 	width: 18px;
 	height: 18px;
-  background: url("../img/icon_checked.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -34px -1005px;
 }
 
 .topping_options label::before {
@@ -1631,13 +1635,8 @@ input[type="checkbox"]:checked + label::before {
   outline: none;
 }
 
-.filters1 {
-  float: left:
-  width: 200px;
-}
-
 .popup_feedback_form {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   margin-left: -239px;
@@ -1970,12 +1969,14 @@ input[type="checkbox"]:checked + label::before {
   padding-right: 15px;
   vertical-align: top;
 }
-
+/*
+background: url("../img/sprite.png") no-repeat center;
+*/
 .remove_button {
   width: 11px;
   height: 11px;
-  background-color: #f8f7f4;
-  background: url("../img/icon_cart_remove.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -36px -975px;
   font-size: 0;
   border: 0;
   outline: 0;
@@ -2007,11 +2008,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .icecream_item1 .cart_item::before {
-  background: url("../img/icon_cart_item2.png");
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -26px -915px;
 }
 
 .icecream_item2 .cart_item::before {
-  background: url("../img/icon_cart_item1.png");
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -26px -856px;
 }
 
 .cart_item a {
@@ -2126,6 +2129,7 @@ border: none;
 
 .popup_display {
 	display: block;
+  animation: bounce 0.6s;
 }
 
 .overlay {
@@ -2141,4 +2145,19 @@ border: none;
 
 .overlay_display {
 	display: block;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
